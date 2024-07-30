@@ -31,9 +31,9 @@ public abstract class Piece {
 	 * @param etage étage
 	 * @param superficie superficie
 	 */
-	public Piece(int etage, double superficie) {
-		this.numEtage = etage;
-		this.superficie = superficie;
+	public Piece(Integer etage, Double superficie) {
+        this.numEtage = (etage != null) ? etage : 0;
+        this.superficie = (superficie != null) ? superficie : 0;
 	}
 	
 	/** Retourne le type de la pièce
