@@ -6,10 +6,10 @@ package fr.diginamic.immobilier.entites;
 public abstract class Piece {
 
 	/** superficie : superficie*/
-	private double superficie;
+	private Double superficie;
 	
 	/** numEtage : étage où se situe la pièce*/
-	private int numEtage;
+	private Integer numEtage;
 
 	/** TYPE_CHAMBRE : String*/
 	public static final String TYPE_CHAMBRE = "Chambre";
