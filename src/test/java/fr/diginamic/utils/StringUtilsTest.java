@@ -46,7 +46,7 @@ public class StringUtilsTest {
 
     @Test
     public void stringUtilsTest7() {
-        int exception = StringUtils.levenshteinDistance("chien", null);
-
+        Assertions.assertThatThrownBy(() -> StringUtils.levenshteinDistance("chien", null)).isInstanceOf(IllegalArgumentException.class);
+    }
 
 }
