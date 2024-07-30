@@ -11,6 +11,21 @@ public abstract class Piece {
 	/** numEtage : étage où se situe la pièce*/
 	private int numEtage;
 
+	/** TYPE_CHAMBRE : String*/
+	public static final String TYPE_CHAMBRE = "Chambre";
+
+	/** TYPE_SALON : String*/
+	public static final String TYPE_SALON = "Salon";
+
+	/** TYPE_CUISINE : String*/
+	public static final String TYPE_CUISINE = "Cuisine";
+
+	/** TYPE_CUISINE : String*/
+	public static final String TYPE_WC = "WC";
+
+	/** TYPE_CUISINE : String*/
+	public static final String TYPE_SDB = "Salle de bain";
+
 	/** Constructeur
 	 * @param etage étage
 	 * @param superficie superficie
