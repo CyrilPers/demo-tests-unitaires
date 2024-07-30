@@ -41,7 +41,7 @@ public class MaisonTest extends TestCase {
         Salon salon = new Salon(0, 20.0);
         maison.ajouterPiece(chambre);
         maison.ajouterPiece(salon);
-        double result = maison.superficieTypePiece(Chambre.class);
+        double result = maison.superficieTypePiece(Piece.TYPE_CHAMBRE);
         Assertions.assertThat(result).isEqualTo(10.0);
     }
 

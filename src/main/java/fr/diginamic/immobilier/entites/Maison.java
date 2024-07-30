@@ -44,13 +44,13 @@ public class Maison {
 	}
 	
 	/** Retourne la superficie total pour un type de pièce donné
-	 * @param typePiece type de pièce
+	 * @param pieceType String type de pièce
 	 * @return double
 	 */
-	public double superficieTypePiece(Class<?> classPiece) {
+	public double superficieTypePiece(String pieceType) {
 		double superficie = 0;
 		for (Piece piece : pieces) {
-			if (classPiece!=null && classPiece.isInstance(piece)) {
+			if (pieceType!=null && piece.getType().equals(pieceType)) {
 				superficie += piece.getSuperficie();
 			}
 		}
